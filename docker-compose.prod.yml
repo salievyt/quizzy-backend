@@ -3,6 +3,8 @@ version: '3.8'
 services:
   web:
     build: .
+    expose:
+      - "8004"
     volumes:
       - ./db.sqlite3:/app/db.sqlite3
       - ./media:/app/media
